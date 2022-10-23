@@ -9,7 +9,7 @@ int main()
 	while (scanf("%d", &m) != EOF)
 	{
 		int i;
-		for (i = m; i > 0; i--)
+		for (i = m-2; i > 0; i--)//输出的两个都是要小于等于m的，原作者的代码（i=m。。。有误，例如m=17时，原作者代码将输出17 19，与题意不符合
 		{
 			if (prime_number(i) == 1 && prime_number(i + 2) == 1)
 			{
